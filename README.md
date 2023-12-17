@@ -30,4 +30,3 @@ You don't.
 ![image](https://github.com/HarryXChen3/advent_of_code23/assets/51322624/69ec59f7-6862-41cb-a5e6-84abf17c5578)
 ![image](https://github.com/HarryXChen3/advent_of_code23/assets/51322624/2344938b-33fe-4a4d-9a6b-38b991af41ec)
 ![image](https://github.com/HarryXChen3/advent_of_code23/assets/51322624/7f1b5f79-2834-468c-ae0b-5421e35c3ba2)
-![image](https://github.com/HarryXChen3/advent_of_code23/assets/51322624/657bd5aa-6e6d-46b1-8376-60d9f153b3d5)
