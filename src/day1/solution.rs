@@ -1,14 +1,4 @@
-use std::fs::File;
-use std::io::{BufRead, BufReader, Lines};
-use std::path::Path;
-
-// The output is wrapped in a Result to allow matching on errors
-// Returns an Iterator to the Reader of the lines of the file.
-fn read_lines<P>(filename: P) -> std::io::Result<Lines<BufReader<File>>>
-    where P: AsRef<Path>, {
-    let file = File::open(filename)?;
-    Ok(BufReader::new(file).lines())
-}
+use crate::common;
 
 fn next_word(
     n: u32,
@@ -51,7 +41,7 @@ const WORD_DIGITS: &'static [&'static str] =
     &["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
 pub(crate) fn solve() {
-    if let Ok(lines) = read_lines("src/day1/input.txt") {
+    if let Ok(lines) = common::read_lines("src/day1/input.txt") {
         let mut digit_only_sum = 0;
         let mut combined_sum = 0;
 
@@ -143,7 +133,7 @@ pub(crate) fn solve() {
             }
         }
 
-        println!("Part 1: {}", digit_only_sum);
-        println!("Part 2: {}", combined_sum);
+        println!("1.1: {}", digit_only_sum);
+        println!("1.2: {}", combined_sum);
     }
 }
